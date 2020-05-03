@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 16,
+        "name": "Verify if place is successfully added using AddPlaceAPI",
+        "description": "",
+        "id": "validating-place-api\u0027s;verify-if-place-is-successfully-added-using-addplaceapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1095648256,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add Place Payload \"A355\" \"English\" \"World Cross center2345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "A355",
+                  "offset": 19
+                },
+                {
+                  "val": "English",
+                  "offset": 26
+                },
+                {
+                  "val": "World Cross center2345",
+                  "offset": 36
+                }
+              ],
+              "location": "addplacee.add_place_payload_something_something_something(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1764820369,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"addPlaceAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "addPlaceAPI",
+                  "offset": 12
+                },
+                {
+                  "val": "POST",
+                  "offset": 31
+                }
+              ],
+              "location": "addplacee.user_calls_something_with_something_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10374662,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the API call got success with status 200",
+            "match": {
+              "location": "addplacee.the_api_call_got_success_with_status_200()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validating Place API\u0027S",
+    "description": "",
+    "id": "validating-place-api\u0027s",
+    "keyword": "Feature",
+    "uri": "/Users/jyotiyadav/Practise/YOYO/src/test/java/features/placeValidation.feature"
+  }
+]
